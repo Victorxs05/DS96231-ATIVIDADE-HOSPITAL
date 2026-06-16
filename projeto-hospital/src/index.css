@@ -1,0 +1,58 @@
+:root {
+  --color-white: #ffffff;
+  --color-bg-light: #fcfcfc;
+  --color-red-primary: #dc2626;
+  --color-red-hover: #b91c1c;
+  --color-text-dark: #1e293b;
+  --color-text-muted: #64748b;
+  --color-border: #f1f5f9;
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container padrão para centralizar as páginas no corpo do site */
+.page-blog, 
+.contato-page, 
+.corpo-clinico-page, 
+.page-home, 
+.page-quemsomos, 
+.page-servicos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px 60px 24px; /* Espaço para não cobrir com o Header fixo */
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Animação suave de entrada para agilidade visual */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

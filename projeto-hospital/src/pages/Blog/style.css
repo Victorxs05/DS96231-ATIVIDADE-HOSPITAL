@@ -1,0 +1,36 @@
+.page-blog h1 {
+    font-size: 32px;
+    color: var(--color-text-dark);
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.page-blog p {
+    color: var(--color-red-primary);
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.page-blog ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.page-blog ul li {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.page-blog ul li:hover {
+    border-color: #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    color: var(--color-text-dark);
+}

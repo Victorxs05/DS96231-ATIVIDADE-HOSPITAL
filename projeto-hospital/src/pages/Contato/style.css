@@ -1,0 +1,48 @@
+.contato-page h1 {
+    font-size: 36px;
+    color: var(--color-text-dark);
+    margin-bottom: 6px;
+}
+
+.contato-page .subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+}
+
+.contatos-lista {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 16px 32px;
+}
+
+.contato-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contato-item:last-child {
+    border-bottom: none;
+}
+
+.contato-item strong {
+    font-weight: 600;
+    color: var(--color-text-dark);
+    font-size: 15px;
+}
+
+.contato-item span {
+    color: var(--color-text-muted);
+    font-size: 15px;
+    transition: var(--transition-fast);
+}
+
+/* Destaque sutil e dinâmico para os números de telefone e e-mail ao passar o mouse */
+.contato-item:hover span {
+    color: var(--color-red-primary);
+}

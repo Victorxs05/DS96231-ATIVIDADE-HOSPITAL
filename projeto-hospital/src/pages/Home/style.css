@@ -1,0 +1,31 @@
+.page-home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.page-home h1 {
+    font-size: 42px;
+    color: var(--color-red-primary);
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.page-home h2 {
+    font-size: 24px;
+    color: var(--color-text-dark);
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.page-home p {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    border-left: 2px solid var(--color-red-primary);
+    padding-left: 16px;
+}

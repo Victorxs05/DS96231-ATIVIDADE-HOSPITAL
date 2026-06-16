@@ -1,0 +1,63 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    letter-spacing: -0.5px;
+    transition: var(--transition-fast);
+}
+
+header h1:hover {
+    color: var(--color-red-primary);
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+/* Estilização dos blocos e links do NavLink */
+nav > a {
+    position: relative;
+    padding: 8px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: var(--transition-fast);
+}
+
+nav > a:hover {
+    color: var(--color-red-primary);
+}
+
+/* Linha fina com efeito de agilidade que expande ao passar o mouse */
+nav > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-red-primary);
+    transition: var(--transition-fast);
+}
+
+nav > a:hover::after {
+    width: 100%;
+}
